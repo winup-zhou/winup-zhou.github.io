@@ -4,8 +4,6 @@
 		<!-- fevicon -->
 		<link rel="icon" href="/icon/logo.png" sizes="32x32">
 		<!-- basic -->
-		<!-- site metas -->
-		<title>Windows_Update's Web</title>
 		<!-- basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
 		<!-- site metas -->
-		<title>Windows_Update's Web</title>
+		<title>Windows_Update's Web - BVE</title>
 		<meta name="keywords" content="nothing here">
 		<meta name="description" content="nothing here">
 		<meta name="author" content="Windows_Update">
@@ -29,6 +27,8 @@
 		<!-- Tweaks for older IEs-->
 		<link rel="stylesheet" href="css/font-awesome.css">
 		<link rel="stylesheet" href="css/jquery.fancybox.min.css" media="screen">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="js/lang.js"></script>
 		<!–[if lt IE 9]>
 		<script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script>
 		<![endif]–>
@@ -58,22 +58,39 @@
                            </button>
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
-                              <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="/">主页</a>
+                                    <a class="nav-link" href="/" lang="ch">主页</a>
+									<a class="nav-link" href="/" lang="en">Home</a>
+									<a class="nav-link" href="/" lang="jp">ホーム</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="/bve.html">Bve TrainSim</a>
+                                    <a class="nav-link" href="/bve.html" lang="ch">Bve TrainSim</a>
+									<a class="nav-link" href="/bve.html" lang="en">Bve TrainSim</a>
+									<a class="nav-link" href="/bve.html" lang="jp">Bve TrainSim</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="/mc.html">MineCraft</a>
+                                    <a class="nav-link" href="/mc.html" lang="ch">MineCraft</a>
+									<a class="nav-link" href="/mc.html" lang="en">MineCraft</a>
+									<a class="nav-link" href="/mc.html" lang="jp">MineCraft</a>
                                  </li>
 								 <li class="nav-item">
-                                    <a class="nav-link" href="/dt.html">公告&动态</a>
+                                    <a class="nav-link" href="/dt.html" lang="ch">公告&动态</a>
+									<a class="nav-link" href="/dt.html" lang="en">Announcement</a>
+									<a class="nav-link" href="/dt.html" lang="jp">発表</a>
                                  </li>
 								 <li class="nav-item">
-                                    <a class="nav-link" href="https://space.bilibili.com/">这是你？</a>
+                                    <a class="nav-link" href="https://space.bilibili.com/" lang="ch">这是你？</a>
+									<a class="nav-link" href="https://space.bilibili.com/" lang="en">This is you?</a>
+									<a class="nav-link" href="https://space.bilibili.com/" lang="jp">これはあなたです？</a>
                                  </li>
+								 <li class="nav-item">🌏
+									<select id="lang">
+									<!-- <option value="browser">Indicated by the browser</option> -->
+									<option value="ch">简体中文</option>
+									<option value="en">ENGLISH</option>
+									<option value="jp">日本語</option>
+									</select>
+								</li>
                               </ul>
                            </div>
                         </nav>

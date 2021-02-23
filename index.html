@@ -4,8 +4,6 @@
 		<!-- fevicon -->
 		<link rel="icon" href="/icon/logo.png" sizes="32x32">
 		<!-- basic -->
-		<!-- site metas -->
-		<title>Windows_Update's Web</title>
 		<!-- basic -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,6 +27,8 @@
 		<!-- Tweaks for older IEs-->
 		<link rel="stylesheet" href="css/font-awesome.css">
 		<link rel="stylesheet" href="css/jquery.fancybox.min.css" media="screen">
+		<script src="http://code.jquery.com/jquery-latest.js"></script>
+		<script src="js/lang.js"></script>
 		<!–[if lt IE 9]>
 		<script src=”http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js”></script>
 		<![endif]–>
@@ -59,20 +59,38 @@
                            <div class="collapse navbar-collapse" id="navbarsExample04">
                               <ul class="navbar-nav mr-auto">
                                  <li class="nav-item">
-                                    <a class="nav-link" href="/">主页</a>
+                                    <a class="nav-link" href="/" lang="ch">主页</a>
+									<a class="nav-link" href="/" lang="en">Home</a>
+									<a class="nav-link" href="/" lang="jp">ホーム</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="/bve.html">Bve TrainSim</a>
+                                    <a class="nav-link" href="/bve.html" lang="ch">Bve TrainSim</a>
+									<a class="nav-link" href="/bve.html" lang="en">Bve TrainSim</a>
+									<a class="nav-link" href="/bve.html" lang="jp">Bve TrainSim</a>
                                  </li>
                                  <li class="nav-item">
-                                    <a class="nav-link" href="/mc.html">MineCraft</a>
+                                    <a class="nav-link" href="/mc.html" lang="ch">MineCraft</a>
+									<a class="nav-link" href="/mc.html" lang="en">MineCraft</a>
+									<a class="nav-link" href="/mc.html" lang="jp">MineCraft</a>
                                  </li>
 								 <li class="nav-item">
-                                    <a class="nav-link" href="/dt.html">公告&动态</a>
+                                    <a class="nav-link" href="/dt.html" lang="ch">公告&动态</a>
+									<a class="nav-link" href="/dt.html" lang="en">Announcement</a>
+									<a class="nav-link" href="/dt.html" lang="jp">発表</a>
                                  </li>
 								 <li class="nav-item">
-                                    <a class="nav-link" href="https://space.bilibili.com/">这是你？</a>
+                                    <a class="nav-link" href="https://space.bilibili.com/" lang="ch">这是你？</a>
+									<a class="nav-link" href="https://space.bilibili.com/" lang="en">This is you?</a>
+									<a class="nav-link" href="https://space.bilibili.com/" lang="jp">これはあなたです？</a>
                                  </li>
+								 <li class="nav-item">🌏
+									<select id="lang">
+									<!-- <option value="browser">Indicated by the browser</option> -->
+									<option value="ch">简体中文</option>
+									<option value="en">ENGLISH</option>
+									<option value="jp">日本語</option>
+									</select>
+								</li>
                               </ul>
                            </div>
                         </nav>
@@ -89,7 +107,9 @@
                      <div class=" col-xl-8 col-lg-8 col-md-8 col-12-9">
                         <div class="text-bg">
                            <h1>wupの小破站<br> <h2 class="white1">（一个咸鱼的网站）</h2></h1>
-                           <a href="https://space.bilibili.com/248556377">作者的Bilibili主页</a>
+                           <a href="https://space.bilibili.com/248556377" lang="ch">作者的Bilibili主页</a>
+						   <a href="https://space.bilibili.com/248556377" lang="en">Author's Bilibili homepage</a>
+						   <a href="https://space.bilibili.com/248556377" lang="jp">著者のBilibiliホームページ</a>
                         </div>
                      </div><br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="https://music.163.com/outchain/player?type=2&id=1415638984&auto=0&height=66"></iframe>
                      <div class="col-xl-4 col-lg-4 col-md-4 col-12-3">
@@ -105,8 +125,12 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="titlepage">
-                     <h2>最新视频/歌单最新动态</h2>
-                     <span>（视频不一定实时更新）</span>
+                     <h2 lang="ch">最新视频/歌单最新动态</h2>
+					 <h2 lang="en">Latest video/playlist latest news</h2>
+					 <h2 lang="jp">最新のビデオ/プレイリスト最新ニュース</h2>
+                     <span lang="ch">（视频不一定实时更新）</span>
+					 <span lang="en">(The video may not be updated in time)</span>
+					 <span lang="jp">（ビデオは時間内に更新されない場合があります）</span>
                   </div>
                </div>
             </div>
