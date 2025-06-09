@@ -4,15 +4,15 @@ layout: home
 
 hero:
   name: "Wup's Simple Blog"
-  text: "だらけたナマコのブログ"
+  text: "一匹のナマコのブログ"
   tagline: "まだ全然書いてない"
   actions:
     - theme: brand
       text: Markdown Examples
-      link: /markdown-examples
+      link: ./markdown-examples
     - theme: alt
       text: API Examples
-      link: /api-examples
+      link: ./api-examples
 
 features:
   - title: Feature A
