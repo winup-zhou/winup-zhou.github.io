@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Wup's Simple Blog"
-  text: "目前啥也没写的一个个人兴趣Blog, Powered by Vitepress"
+  text: "目前啥也没写的一个个人兴趣Blog"
   tagline: My great project tagline
   actions:
     - theme: brand

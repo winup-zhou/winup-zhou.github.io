@@ -23,6 +23,11 @@ export default defineConfig({
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    ],
+
+    footer: {
+      message: 'Powered by <a href="https://github.com/vuejs/vitepress">Vitepress</a>.',
+      copyright: 'Copyright © 2025-present <a href="https://github.com/winup-zhou">Win_Update</a>'
+    }
   }
 })
