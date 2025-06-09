@@ -22,7 +22,9 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/winup-zhou' },
+      { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
+      { icon: 'x', link: 'https://x.com/wup99925510' }
     ],
 
     footer: {
