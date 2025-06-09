@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "wup's blog",
-  description: "A VitePress Site",
+  description: "Just a simple blog powered by Vitepress",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
