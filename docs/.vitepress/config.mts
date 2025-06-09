@@ -5,6 +5,7 @@ export default defineConfig({
   lang: 'zh-CN',
   title: "Wup's Simple Blog",
   description: "目前啥也没写的一个个人兴趣Blog",
+
   locales: {
     root: {
       label: '简体中文',
@@ -31,18 +32,7 @@ export default defineConfig({
               { text: '运行时API示例', link: '/api-examples' }
             ]
           }
-        ],
-
-        socialLinks: [
-          { icon: 'github', link: 'https://github.com/winup-zhou' },
-          { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
-          { icon: 'x', link: 'https://x.com/wup99925510' }
-        ],
-
-        footer: {
-          message: 'Powered by <a href="https://github.com/vuejs/vitepress">Vitepress</a>.',
-          copyright: 'Copyright © 2025-present <a href="https://github.com/winup-zhou">Win_Update</a>'
-        }
+        ]
       }
     },
     ja: {
@@ -70,19 +60,22 @@ export default defineConfig({
               { text: 'ランタイムAPI使用例', link: './api-examples' }
             ]
           }
-        ],
-
-        socialLinks: [
-          { icon: 'github', link: 'https://github.com/winup-zhou' },
-          { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
-          { icon: 'x', link: 'https://x.com/wup99925510' }
-        ],
-
-        footer: {
-          message: 'Powered by <a href="https://github.com/vuejs/vitepress">Vitepress</a>.',
-          copyright: 'Copyright © 2025-present <a href="https://github.com/winup-zhou">Win_Update</a>'
-        }
+        ]
       }
+    }
+  },
+  themeConfig: {
+    i18nRouting: true,
+
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/winup-zhou' },
+      { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
+      { icon: 'x', link: 'https://x.com/wup99925510' }
+    ],
+
+    footer: {
+      message: 'Powered by <a href="https://github.com/vuejs/vitepress">Vitepress</a>.',
+      copyright: 'Copyright © 2025-present <a href="https://github.com/winup-zhou">Win_Update</a>'
     }
   }
 
