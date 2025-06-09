@@ -2,21 +2,21 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "wup's blog",
-  description: "Just a simple blog powered by Vitepress",
+  title: "Wup's Simple Blog",
+  description: "目前啥也没写的一个个人兴趣Blog",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '主页', link: '/' },
+      { text: '语法示例', link: '/markdown-examples' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
+        text: '语法示例',
         items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
+          { text: 'Markdown示例', link: '/markdown-examples' },
+          { text: '运行时API示例', link: '/api-examples' }
         ]
       }
     ],
