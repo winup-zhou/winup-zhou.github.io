@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Wup's Simple Blog"
   text: "一匹のナマコのブログ"
-  tagline: "まだ全然書いてない"
+  tagline: "まだ全然書いてない..."
   actions:
     - theme: brand
       text: Markdown Examples
