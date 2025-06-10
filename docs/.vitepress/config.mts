@@ -5,7 +5,7 @@ export default defineConfig({
   lang: 'zh-Hans',
   title: "Wup's Simple Blog",
   description: "目前啥也没写的一个个人兴趣Blog",
-  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
+  head: [['link', { rel: 'icon', href: '/public/logo.svg' }]],
 
   locales: {
     root: {
@@ -127,7 +127,7 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/public/logo.svg',
     i18nRouting: true,
 
     socialLinks: [
