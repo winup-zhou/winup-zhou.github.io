@@ -6,6 +6,9 @@ hero:
   name: "Wup's Simple Blog"
   text: "一つの平凡なブログ"
   tagline: "現在執筆中…"
+  image:
+    src: /logo.svg
+    alt: Just a tag
   actions:
     - theme: brand
       text: BVE Train Sim

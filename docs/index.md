@@ -6,6 +6,9 @@ hero:
   name: "Wup's Simple Blog"
   text: "一个咸鱼的博客"
   tagline: "目前正在编写..."
+  image:
+    src: /logo.svg
+    alt: Just a tag
   actions:
     - theme: brand
       text: BVE Train Sim
