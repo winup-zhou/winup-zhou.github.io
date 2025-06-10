@@ -2,9 +2,10 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  lang: 'zh-CN',
+  lang: 'zh-Hans',
   title: "Wup's Simple Blog",
   description: "目前啥也没写的一个个人兴趣Blog",
+  head: [['link', { rel: 'icon', href: '/logo.svg' }]],
 
   locales: {
     root: {
@@ -16,22 +17,51 @@ export default defineConfig({
         nav: [
           { text: '主页', link: '/' },
           {
-            text: '语法示例',
+            text: 'BVE Train Sim',
             items: [
-              { text: 'Markdown示例', link: '/markdown-examples' },
-              { text: '运行时API示例', link: '/api-examples' }
+              { text: '补丁', link: '/bve/patchs' },
+              { text: '插件', link: '/bve/plugins' }
             ]
-          }
+          },
+          { text: 'Minecraft', link: '/mc' }
         ],
 
         sidebar: [
           {
-            text: '语法示例',
+            text: 'BVE Train Sim',
             items: [
-              { text: 'Markdown示例', link: '/markdown-examples' },
-              { text: '运行时API示例', link: '/api-examples' }
+              {
+                text: '补丁',
+                items: [
+                  {
+                    text: 'vertah 東武车辆<br>定速+TASC/ATO全功能',
+                    link: '/bve/patchs/tobu-vehicle-ato-tasc'
+                  }, {
+                    text: 'vertah 05系11-13次车 B修',
+                    link: '/bve/patchs/trta05-ato-tasc'
+                  }, {
+                    text: 'vertah 08系 B修',
+                    link: '/bve/patchs/trta08-ato-tasc'
+                  }
+                ],
+                link: '/bve/patchs'
+              },
+              {
+                text: '插件',
+                items: [
+                  {
+                    text: 'MetroAts<br>地下铁直通系统ATC/S',
+                    link: '/bve/plugins/metroats'
+                  }, {
+                    text: 'TGMT-CBTC-EX<br>基于AtsEX的移动闭塞插件',
+                    link: '/bve/plugins/tgmt-cbtc-ex'
+                  }
+                ],
+                link: '/bve/plugins'
+              }
             ]
-          }
+          },
+          { text: 'Minecraft', link: '/mc' }
         ]
       }
     },
@@ -42,29 +72,62 @@ export default defineConfig({
         i18nRouting: true,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-          { text: 'ホーム', link: '/ja/' },
+          { text: 'ホーム', link: '/ja' },
           {
-            text: '構文例',
+            text: 'BVE Train Sim',
             items: [
-              { text: 'Markdown使用例', link: './markdown-examples' },
-              { text: 'ランタイムAPI使用例', link: './api-examples' }
+              { text: 'パッチ', link: '/ja/bve/patchs' },
+              { text: 'プラグイン', link: '/ja/bve/plugins' }
             ]
-          }
+          },
+          { text: 'Minecraft', link: '/ja/mc' }
         ],
 
         sidebar: [
           {
-            text: '構文例',
+            text: 'BVE Train Sim',
             items: [
-              { text: 'Markdown使用例', link: './markdown-examples' },
-              { text: 'ランタイムAPI使用例', link: './api-examples' }
+              {
+                text: 'パッチ',
+                items: [
+                  {
+                    text: 'vertah 東武車両<br>定速＋TASC／ATO全機能',
+                    link: '/ja/bve/patchs/tobu-vehicle-ato-tasc'
+                  },
+                  {
+                    text: 'vertah 05系11-13次車 B修',
+                    link: '/ja/bve/patchs/trta05-ato-tasc'
+                  },
+                  {
+                    text: 'vertah 08系 B修',
+                    link: '/ja/bve/patchs/trta08-ato-tasc'
+                  }
+                ],
+                link: '/ja/bve/patchs'
+              },
+              {
+                text: 'プラグイン',
+                items: [
+                  {
+                    text: 'MetroAts<br>地下鉄直通システムATC／S',
+                    link: '/ja/bve/plugins/metroats'
+                  },
+                  {
+                    text: 'TGMT-CBTC-EX<br>AtsEXベースの移動閉塞プラグイン',
+                    link: '/ja/bve/plugins/tgmt-cbtc-ex'
+                  }
+                ],
+                link: '/ja/bve/plugins'
+              }
             ]
-          }
+          },
+          { text: 'Minecraft', link: '/ja/mc' }
         ]
       }
     }
   },
   themeConfig: {
+    logo: '/logo.svg',
     i18nRouting: true,
 
     socialLinks: [

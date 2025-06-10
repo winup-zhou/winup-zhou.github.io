@@ -5,21 +5,21 @@ layout: home
 hero:
   name: "Wup's Simple Blog"
   text: "一个咸鱼的博客"
-  tagline: "目前啥也没写..."
+  tagline: "目前正在编写..."
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: BVE Train Sim
+      link: /bve
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Minecraft
+      link: /mc
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: BVE相关
+    details: 补丁与插件发布等
+  - title: Minecraft相关
+    details: 服务端开服经验与指南等
+  - title: 其他杂项
+    details: 碎碎念与杂谈
 ---
 
