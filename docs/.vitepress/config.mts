@@ -6,6 +6,7 @@ export default defineConfig({
   title: "Wup's Simple Blog",
   description: "目前啥也没写的一个个人兴趣Blog",
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
+  lastUpdated: true,
 
   locales: {
     root: {
