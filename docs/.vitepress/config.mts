@@ -74,7 +74,7 @@ export default defineConfig({
         notFound: {
           title: '页面未找到',
           quote:
-            '不畏迷茫，砥砺前行。',
+            '哪怕迷失方向，也要在迷途中前行。',
           linkLabel: '前往首页',
           linkText: '带我回首页'
         },
@@ -156,7 +156,7 @@ export default defineConfig({
         },
         notFound: {
           title: 'ページが見つかりません',
-          quote: '迷子でもいい、前へ進め。',
+          quote: '迷子でもいい、迷子でも進め。',
           linkLabel: 'ホームページへ',
           linkText: 'トップページに戻る'
         },
