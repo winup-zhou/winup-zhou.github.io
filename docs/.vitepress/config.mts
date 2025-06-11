@@ -63,7 +63,30 @@ export default defineConfig({
             ]
           },
           { text: 'Minecraft', link: '/mc' }
-        ]
+        ],
+        docFooter: {
+          prev: false,
+          next: false
+        },
+        outline: {
+          label: '页面导航'
+        },
+        notFound: {
+          title: '页面未找到',
+          quote:
+            '不畏迷茫，砥砺前行。',
+          linkLabel: '前往首页',
+          linkText: '带我回首页'
+        },
+        lastUpdated: {
+          text: '最后更新于'
+        },
+        returnToTopLabel: '回到顶部',
+        sidebarMenuLabel: '菜单',
+        darkModeSwitchLabel: '主题',
+        lightModeSwitchTitle: '切换到浅色模式',
+        darkModeSwitchTitle: '切换到深色模式',
+        skipToContentLabel: '跳转到内容'
       }
     },
     ja: {
@@ -123,7 +146,29 @@ export default defineConfig({
             ]
           },
           { text: 'Minecraft', link: '/ja/mc' }
-        ]
+        ],
+        docFooter: {
+          prev: false,
+          next: false
+        },
+        outline: {
+          label: 'ページ内ナビゲーション'
+        },
+        notFound: {
+          title: 'ページが見つかりません',
+          quote: '迷子でもいい、前へ進め。',
+          linkLabel: 'ホームページへ',
+          linkText: 'トップページに戻る'
+        },
+        lastUpdated: {
+          text: '最終更新日'
+        },
+        returnToTopLabel: 'トップに戻る',
+        sidebarMenuLabel: 'メニュー',
+        darkModeSwitchLabel: 'テーマ',
+        lightModeSwitchTitle: 'ライトモードに切り替える',
+        darkModeSwitchTitle: 'ダークモードに切り替える',
+        skipToContentLabel: 'コンテンツへジャンプ'
       }
     }
   },
