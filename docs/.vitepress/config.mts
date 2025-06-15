@@ -23,7 +23,12 @@ export default defineConfig({
               { text: '插件', link: '/bve/plugins' }
             ]
           },
-          { text: 'Minecraft', link: '/mc' }
+          { text: 'Minecraft', link: '/mc' },
+          { text: '友情链接',
+          items:[
+            {text: '樱花小窝', link: 'https://www.sakuraonline.cn' }
+          ]
+          }
         ],
 
         sidebar: [
