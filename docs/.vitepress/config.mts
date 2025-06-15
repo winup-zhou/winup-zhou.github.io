@@ -1,5 +1,5 @@
 import { defineConfig } from 'vitepress'
-
+import UnoCSS from 'unocss/vite';
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   lang: 'zh-Hans',
@@ -7,7 +7,6 @@ export default defineConfig({
   description: "目前啥也没写的一个个人兴趣Blog",
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   lastUpdated: true,
-
   locales: {
     root: {
       label: '简体中文',
@@ -181,11 +180,11 @@ export default defineConfig({
       { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
       { icon: 'x', link: 'https://x.com/wup99925510' }
     ],
-
-    footer: {
-      message: 'Powered by <a href="https://github.com/vuejs/vitepress">Vitepress</a>.',
-      copyright: 'Copyright © 2025-present <a href="https://github.com/winup-zhou">Win_Update</a>'
-    }
-  }
+  },
+  vite: {
+    plugins: [
+      UnoCSS()
+    ]
+  },
 
 })

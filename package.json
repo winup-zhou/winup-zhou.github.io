@@ -1,5 +1,7 @@
 {
+  "type": "module",
   "devDependencies": {
+    "unocss": "^66.2.0",
     "vitepress": "^1.6.3"
   },
   "scripts": {
