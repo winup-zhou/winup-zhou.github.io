@@ -43,7 +43,7 @@ provide('toggle-appearance', async ({ clientX: x, clientY: y }: MouseEvent) => {
 
 //引入仅在主页显示footer
 const route = useRoute() // 获取当前路由对象
-const isHomePage = computed(() => route.path === '/');
+const isHomePage = computed(() => (route.path === '/' || route.path === '/ja/'));
 </script>
 
 <template>

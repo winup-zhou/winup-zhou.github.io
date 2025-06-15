@@ -2,10 +2,10 @@
   <footer class="vp-footer">
     <div class="vp-footer-container">
       <p class="vp-footer-copyright">
-        &copy; {{ currentYear }} Win_Update 版权所有.
+        Copyright &copy; {{ currentYear }} Win_Update.
       </p>
       <p class="vp-footer-poweredby">
-        基于 <a href="https://vitepress.dev/" target="_blank" rel="noopener">VitePress</a> 构建.
+        Powered by <a href="https://vitepress.dev/" target="_blank" rel="noopener">VitePress</a>.
       </p>
     </div>
   </footer>
