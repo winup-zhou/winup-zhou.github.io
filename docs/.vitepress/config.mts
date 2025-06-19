@@ -100,7 +100,7 @@ export default defineConfig({
         i18nRouting: true,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-          { text: 'ホーム', link: '/ja' },
+          { text: 'ホーム', link: '/ja/' },
           {
             text: 'BVE Train Sim',
             items: [
