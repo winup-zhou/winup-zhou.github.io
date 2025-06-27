@@ -1,3 +1,7 @@
+---
+CopyRight: true
+---
+
 # Minecraft相关
 
 ::: info

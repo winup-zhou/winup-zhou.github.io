@@ -5,7 +5,7 @@ import { nextTick, provide, computed } from 'vue'
 import HomePage from './HomePage.vue'
 import Footer from './Footer.vue'
 //引入动态深浅切换
-const { isDark } = useData()
+const { isDark,frontmatter } = useData()
 
 function enableTransitions() {
   return 'startViewTransition' in document
@@ -54,6 +54,9 @@ const isHomePage = computed(() => (route.path === '/' || route.path === '/ja/'))
     </template>
     <template #layout-bottom>
       <Footer v-if="isHomePage" />
+    </template>
+    <template #doc-footer-before>
+      <CopyRight v-if="frontmatter.CopyRight" />
     </template>
   </DefaultTheme.Layout>
 </template>
