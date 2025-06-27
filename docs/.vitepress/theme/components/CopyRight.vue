@@ -23,14 +23,19 @@
   margin-bottom: 0;
 }
 .my-complex-footer a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+}
+:root.dark .my-complex-footer a {
   color: var(--vp-c-brand-lighter);
   text-decoration: none;
 }
 .my-complex-footer a:hover {
   text-decoration: underline;
 }
-
 .copyright-symbol {
   margin-right: 0.6em;
 }
 </style>
+<script setup lang="ts">
+</script>
