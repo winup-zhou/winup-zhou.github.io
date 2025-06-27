@@ -7,8 +7,7 @@ import CSSLayout from './components/CSSLayout.vue'
 let homePageStyle: HTMLStyleElement | undefined
 import './style/index.css'
 import 'uno.css'
-//import vue
-import CopyRight from "./components/CopyRight.vue";
+
 //config
 export default {
   extends: DefaultTheme,
@@ -17,8 +16,6 @@ export default {
   },
 
   enhanceApp({app , router }) {
-    //使用版权声明组件
-    app.component('CopyRight', CopyRight)
     // 彩虹背景动画样式
     if (typeof window === 'undefined')
       return
@@ -42,7 +39,7 @@ if (typeof window !== 'undefined') {
   else if (browser.includes('safari'))
     document.documentElement.classList.add('browser-safari')
 }
-// Speed up the rainbow animation on home page
+// 彩虹背景动画样式
 function updateHomePageStyle(value: boolean) {
   if (value) {
     if (homePageStyle)

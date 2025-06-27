@@ -4,6 +4,7 @@ import DefaultTheme from 'vitepress/theme'
 import { nextTick, provide, computed } from 'vue'
 import HomePage from './HomePage.vue'
 import Footer from './Footer.vue'
+import CopyRight from "./CopyRight.vue";
 //引入动态深浅切换
 const { isDark,frontmatter } = useData()
 

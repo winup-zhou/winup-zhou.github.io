@@ -1,7 +1,8 @@
 <template>
   <footer class="my-complex-footer">
     <div class="footer-line copyright-line">
-      &copy  <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noreferrer" target="_blank">使用CC BY-NC-SA 4.0许可协议进行共享</a>
+      <span class="copyright-symbol">&copy;</span>
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noreferrer" target="_blank">使用CC BY-NC-SA 4.0许可协议进行共享</a>
     </div>
   </footer>
 </template>
@@ -19,13 +20,17 @@
   line-height: 1.5;
 }
 .footer-line:last-child {
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .my-complex-footer a {
-  color: var(--vp-c-brand-1);
+  color: var(--vp-c-brand-lighter);
   text-decoration: none;
 }
 .my-complex-footer a:hover {
   text-decoration: underline;
+}
+
+.copyright-symbol {
+  margin-right: 0.6em;
 }
 </style>
