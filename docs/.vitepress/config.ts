@@ -1,19 +1,22 @@
-import { defineConfig } from 'vitepress'
+// .vitepress/config.ts
+
+import { defineConfig } from 'vitepress';
 import UnoCSS from 'unocss/vite';
-// https://vitepress.dev/reference/site-config
+import { searchOptionsI18n } from './config/search-options-i18n';
+
 export default defineConfig({
   lang: 'zh-Hans',
   title: "Wup's Simple Blog",
   description: "目前啥也没写的一个个人兴趣Blog",
   head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   lastUpdated: true,
+
   locales: {
     root: {
       label: '简体中文',
       lang: 'zh',
       themeConfig: {
         i18nRouting: true,
-        // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: '主页', link: '/' },
           {
@@ -25,9 +28,9 @@ export default defineConfig({
           },
           { text: 'Minecraft', link: '/mc' },
           { text: '友情链接',
-          items:[
-            {text: '樱花小窝', link: 'https://www.sakuraonline.cn' }
-          ]
+            items:[
+              {text: '樱花小窝', link: 'https://www.sakuraonline.cn' }
+            ]
           }
         ],
 
@@ -77,8 +80,7 @@ export default defineConfig({
         },
         notFound: {
           title: '页面未找到',
-          quote:
-            '哪怕迷失方向，也要在迷途中前行。',
+          quote: '哪怕迷失方向，也要在迷途中前行。',
           linkLabel: '前往首页',
           linkText: '带我回首页'
         },
@@ -96,9 +98,9 @@ export default defineConfig({
     ja: {
       label: '日本語',
       lang: 'ja',
+      link: '/ja/',
       themeConfig: {
         i18nRouting: true,
-        // https://vitepress.dev/reference/default-theme-config
         nav: [
           { text: 'ホーム', link: '/ja/' },
           {
@@ -134,7 +136,7 @@ export default defineConfig({
                 link: '/ja/bve/patchs'
               },
               {
-                text: 'プラグイン',
+                text: '插件',
                 items: [
                   {
                     text: 'MetroAts<br>地下鉄直通システムATC／S',
@@ -176,20 +178,40 @@ export default defineConfig({
       }
     }
   },
+
   themeConfig: {
     logo: '/logo.svg',
     i18nRouting: true,
-
     socialLinks: [
       { icon: 'github', link: 'https://github.com/winup-zhou' },
       { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
       { icon: 'x', link: 'https://x.com/wup99925510' }
     ],
+    search: {
+      provider: 'local',
+      options: {
+        locales: {
+          root: searchOptionsI18n.root,
+          ja: searchOptionsI18n.ja,
+        }
+      }
+    }
   },
+
   vite: {
     plugins: [
       UnoCSS()
     ]
   },
-
-})
+  sitemap: {
+    hostname: 'https://blog.wups-web.work',
+    transformItems(items:any[]) {
+      return items
+          .filter(item => !item.url.includes('migration'))
+          .map(item => ({
+            url: item.url,
+            lastmod: item.lastUpdated || new Date().toISOString(),
+          }));
+    }
+  }
+});
