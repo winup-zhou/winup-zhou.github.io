@@ -11,6 +11,9 @@ hero:
     alt: Just a tag
   actions:
     - theme: brand
+      text: 了解我
+      link: /introduction
+    - theme: alt
       text: BVE Train Sim
       link: /bve/patchs
     - theme: alt
