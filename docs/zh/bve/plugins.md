@@ -1,3 +1,8 @@
+---
+prev: false
+next: false
+---
+
 # 公开中的插件
 ::: info
 当前正在编写内容

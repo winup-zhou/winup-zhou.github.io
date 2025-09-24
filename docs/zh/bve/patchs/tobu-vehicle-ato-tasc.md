@@ -1,85 +1,134 @@
-# Markdown Extension Examples
+---
+prev: false
+---
 
-This page demonstrates some of the built-in markdown extensions provided by VitePress.
+# vertah 東武车辆 定速+TASC/ATO全功能补丁
 
-## Syntax Highlighting
+该补丁补全了车辆的ATO/TASC功能，增加了手柄的延迟显示，并追加了牵引2级定速功能。
 
-VitePress provides Syntax Highlighting powered by [Shiki](https://github.com/shikijs/shiki), with additional features like line-highlighting:
-
-**Input**
-
-````md
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-````
-
-**Output**
-
-```js{4}
-export default {
-  data () {
-    return {
-      msg: 'Highlighted!'
-    }
-  }
-}
-```
-
-## Custom Containers
-
-**Input**
-
-```md
-::: info
-This is an info box.
-:::
+## 安装方式
 
 ::: tip
-This is a tip.
+在安装该补丁前，您应当先行安装vertah提供的东武9000/9050/50070系的车辆数据。
 :::
 
-::: warning
-This is a warning.
-:::
+将压缩包解压后，替换`Scenarios/vertah`路径下对应的文件即可完成安装。
 
-::: danger
-This is a dangerous warning.
-:::
-
+**追加的文件结构**
 ::: details
-This is a details block.
-:::
 ```
+Scenarios
+  └─vertah
+      ├─tob50070
+      │  │  panel.txt
+      │  │  sound.cfg
+      │  │  Vehicle.txt
+      │  │
+      │  ├─ats
+      │  │      ato.bmp
+      │  │      ato_n.bmp
+      │  │      tasccgs.bmp
+      │  │      tasccgs_n.bmp
+      │  │
+      │  ├─d3d
+      │  │      ati_ato.bmp
+      │  │      ati_oneman.bmp
+      │  │      ati_tasc.bmp
+      │  │
+      │  ├─files
+      │  │      ATI.ini
+      │  │      ATI_x86.dll
+      │  │      autopilot.ini
+      │  │      bve-autopilot.dll
+      │  │      CSC50T.dll
+      │  │      DetailManager.dll
+      │  │      detailmodules.txt
+      │  │      NotchNumber.dll
+      │  │      NotchNumber.ini
+      │  │
+      │  └─sub
+      │          ati_brake.bmp
+      │          ati_brake2.bmp
+      │          ati_power.bmp
+      │          auto1.bmp
+      │          auto2.bmp
+      │          auto3.bmp
+      │          auto4.bmp
+      │          auto5.bmp
+      │          auto6.bmp
+      │          auto7.bmp
+      │
+      ├─tob9000
+      │  │  panel.txt
+      │  │  sound.cfg
+      │  │  Vehicle.txt
+      │  │
+      │  ├─ats
+      │  │      ato.bmp
+      │  │      ato_n.bmp
+      │  │      tasccgs.bmp
+      │  │      tasccgs_n.bmp
+      │  │
+      │  ├─d3d
+      │  │      ati_atost.bmp
+      │  │      ati_atost1.bmp
+      │  │      ati_atost2.bmp
+      │  │      ati_atost3.bmp
+      │  │      ati_atost4.bmp
+      │  │      ati_atotasc.png
+      │  │
+      │  └─files
+      │          ATI.ini
+      │          ATI_x86.dll
+      │          autopilot.ini
+      │          bve-autopilot.dll
+      │          CSC50T.dll
+      │          DetailManager.dll
+      │          detailmodules.txt
+      │          NotchNumber.dll
+      │          NotchNumber.ini
+      │
+      └─tob9050
+          │  panel.txt
+          │  sound.cfg
+          │  Vehicle.txt
+          │
+          ├─ats
+          │      ato.bmp
+          │      ato_n.bmp
+          │      tasccgs.bmp
+          │      tasccgs_n.bmp
+          │
+          ├─d3d
+          │      ati_atost.bmp
+          │      ati_atost1.bmp
+          │      ati_atost2.bmp
+          │      ati_atost3.bmp
+          │      ati_atost4.bmp
+          │      ati_atotasc.png
+          │
+          └─files
+                  ATI.ini
+                  ATI_x86.dll
+                  autopilot.ini
+                  bve-autopilot.dll
+                  CSC50T.dll
+                  DetailManager.dll
+                  detailmodules.txt
+                  NotchNumber.dll
+                  NotchNumber.ini
+```
+:::
 
-**Output**
+## 操作说明
+
+**按键**
 
 ::: info
-This is an info box.
+仅涉及追加部分，其余部分请参照车辆原作者提供的信息。
 :::
 
-::: tip
-This is a tip.
-:::
-
-::: warning
-This is a warning.
-:::
-
-::: danger
-This is a dangerous warning.
-:::
-
-::: details
-This is a details block.
-:::
-
-## More
-
-Check out the documentation for the [full list of markdown extensions](https://vitepress.dev/guide/markdown).
+|功能|对应按键|
+|:---:|:---:|
+|ATO/TASC切换|`3`|
+|ATO启动|`Insert`+`Delete`|

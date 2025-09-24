@@ -12,7 +12,7 @@ hero:
   actions:
     - theme: brand
       text: BVE Train Sim
-      link: /bve
+      link: /bve/patchs
     - theme: alt
       text: Minecraft
       link: /mc
