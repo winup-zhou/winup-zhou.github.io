@@ -5,5 +5,5 @@ CopyRight: true
 # Minecraft相关
 
 ::: info
-当前正在编写内容
+内容编写中
 :::

@@ -28,12 +28,6 @@ export const zhSidebar: DefaultTheme.SidebarItem[]= [
                     {
                         text: 'vertah 東武车辆<br>定速+TASC/ATO全功能',
                         link: '/bve/patchs/tobu-vehicle-ato-tasc'
-                    }, {
-                        text: 'vertah 05系11-13次车 B修',
-                        link: '/bve/patchs/trta05-ato-tasc'
-                    }, {
-                        text: 'vertah 08系 B修',
-                        link: '/bve/patchs/trta08-ato-tasc'
                     }
                 ],
                 link: '/bve/patchs'
@@ -42,12 +36,12 @@ export const zhSidebar: DefaultTheme.SidebarItem[]= [
                 text: '插件',
                 items: [
                     {
-                        text: 'MetroAts<br>地下铁直通系统ATC/S',
+                        text: 'MetroAts<br>地铁直通系统ATC/S插件',
                         link: '/bve/plugins/metroats'
-                    }, {
-                        text: 'TGMT-CBTC-EX<br>基于AtsEX的移动闭塞插件',
-                        link: '/bve/plugins/tgmt-cbtc-ex'
-                    }
+                    }//, {
+                    //     text: 'TGMT-CBTC-EX<br>基于AtsEX的移动闭塞插件',
+                    //     link: '/bve/plugins/tgmt-cbtc-ex'
+                    // }
                 ],
                 link: '/bve/plugins'
             }

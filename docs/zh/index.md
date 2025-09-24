@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Wup's Simple Blog"
   text: "一个咸鱼的博客"
-  tagline: "目前正在编写..."
+  tagline: "博客绝赞建设中..."
   image:
     src: /logo.svg
     alt: Just a tag

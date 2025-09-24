@@ -132,3 +132,9 @@ Scenarios
 |:---:|:---:|
 |ATO/TASC切换|`3`|
 |ATO启动|`Insert`+`Delete`|
+
+## 下载
+
+::: warning
+国内用户请加入本人QQ群进行下载。
+:::

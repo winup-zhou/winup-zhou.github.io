@@ -1,4 +1,7 @@
+---
+CopyRight: true
+---
 # Bve Train Sim相关
 ::: info
-当前正在编写内容
+点击左侧列表进入相应页面
 :::
