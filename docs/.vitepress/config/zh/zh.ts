@@ -18,7 +18,8 @@ export const zhNav: DefaultTheme.NavItem[]= [
         ]
     }
 ];
-export const zhSidebar: DefaultTheme.SidebarItem[]= [
+
+export const zhSidebar_bve: DefaultTheme.SidebarItem[]= [
     {
         text: 'BVE Train Sim',
         items: [
@@ -46,6 +47,9 @@ export const zhSidebar: DefaultTheme.SidebarItem[]= [
                 link: '/bve/plugins'
             }
         ]
-    },
+    }
+];
+
+export const zhSidebar_mc: DefaultTheme.SidebarItem[]= [
     { text: 'Minecraft', link: '/mc' }
 ]

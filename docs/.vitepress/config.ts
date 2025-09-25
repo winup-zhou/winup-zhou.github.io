@@ -3,7 +3,7 @@
 import { defineConfig } from 'vitepress';
 import UnoCSS from 'unocss/vite';
 import { searchOptionsI18n } from './config/search-options-i18n';
-import { zhNav,zhSidebar } from "./config/zh/zh";
+import { zhNav, zhSidebar_bve, zhSidebar_mc } from "./config/zh/zh";
 import { jaNav,jaSidebar } from "./config/ja/ja";
 import { zhconfig } from "./config/zh/zh.config";
 import { jaConfig } from "./config/ja/ja.config";
@@ -35,7 +35,10 @@ export default defineConfig({
       lang: 'zh',
       themeConfig: {
         nav:zhNav,
-        sidebar: zhSidebar,
+        sidebar: {
+          '/bve/': zhSidebar_bve,
+          '/mc/': zhSidebar_mc
+        },
         ...zhconfig
       }
     },
