@@ -5,6 +5,8 @@
 
 ## 项目开源许可
 
+![GitHub License](https://img.shields.io/github/license/winup-zhou/MetroAts)  
+
 ::: details
 ```
 MIT License
@@ -88,11 +90,12 @@ SOFTWARE.
 
 ## 插件下载
 
-开发版：  
+开发版(GitHub Actions)：  
 [![MSBuild](https://github.com/winup-zhou/MetroAts/actions/workflows/build.yml/badge.svg)](https://github.com/winup-zhou/MetroAts/actions/workflows/build.yml)
 
 正式版：  
-[Releases · winup-zhou/MetroAts](https://github.com/winup-zhou/MetroAts/releases)
+![GitHub Release](https://img.shields.io/github/v/release/winup-zhou/MetroAts)
+
 
 ## 参与开发
 如果你对该项目有兴趣，欢迎加入一同开发。  

@@ -1,3 +1,7 @@
+---
+CopyRight: true
+---
+
 # 简明WSL2安装教程
 
 ## 何为WSL
@@ -24,33 +28,97 @@ WSL 旨在为想要同时使用 Windows 和 Linux 的开发人员提供无缝高
 
 ### 启用所需的Windows功能
 如果你的系统满足最低系统要求，则该功能默认已被安装在系统中，但尚未启用。  
-要启用WSL的相关功能，我们需要先打开**设置**，并搜索**启用或关闭 Windows 功能**。  
+1. 要启用WSL的相关功能，我们需要先打开**设置**
+2. 搜索`启用或关闭 Windows 功能`。  
+   
+![搜索设置](/wsl-1.png)  
 
-![启用图中所示的两个功能](/wsl-1.png)  
+---
 
-启用图中所示的两个功能。
+3. 点击打开后，勾选启用图中所示的两个功能。
+
+![启用图中所示的两个功能](/wsl-2.png) 
+
+---
 
 ::: tip
-如果你熟悉命令行，在Powershell中使用下面的两条命令可以起到同样效果。  
+如果你熟悉命令行，在Powershell中使用下面的两条命令可以起到同样效果，更加方便快速。  
 - 启用 **适用于 Linux 的 Windows 子系统** 功能
-```
+```powershell
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 ```
 - 启用 **虚拟机平台** 功能
-```
+```powershell
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 ```
+- 显示**操作成功完成**即完成组件启用。
+
+![Powershell提示](/wsl-3.png)
+
 :::
 
-启用后，请**重启**计算机准备后续步骤。
+4. 启用后，请**重启**计算机准备后续步骤。
 
 ---
 
 ### 安装WSL的基本组件
-::: info
+::: tip
 该操作需要质量较好的网络(可以流畅的连接到GitHub)  
 如果你的网络无法做到这点，请事先下载以下文件:
 - WSL2安装程序(文件名称为**wsl.2.x.x.x.x64.msi**): [Releases · microsoft/WSL](https://github.com/microsoft/WSL/releases/latest)  
-- USBIPD安装程序(文件名称为**usbipd-win_x.x.x_x64.msi**): [Releases · dorssel/usbipd-win](https://github.com/dorssel/usbipd-win/releases/latest)
+- USBIPD安装程序(文件名称为**usbipd-win_x.x.x_x64.msi**): [Releases · dorssel/usbipd-win](https://github.com/dorssel/usbipd-win/releases/latest)  
 :::
 
+1. 按下`Windows + R`，在`运行`页面中输入`powershell`打开**Powershell**
+
+![运行](/wsl-4.png)
+
+以下指令需要在**Powershell**中执行。
+
+---
+
+2. 输入下方命令进行WSL的安装  
+::: info
+如果你的网络质量不佳以至于无法连接到GitHub，直接将下面这一步替换为双击 **WSL2安装程序(文件名称为wsl.2.x.x.x.x64.msi)** 进行安装
+:::
+```powershell
+wsl --install
+```
+
+3. 输入下方命令将WSL默认版本设置为2
+```powershell
+wsl --set-default-version 2
+```
+![将WSL默认版本设置为2](/wsl-5.png)
+
+4. (可选)输入下方命令检查并更新WSL内核
+```powershell
+wsl --update
+```
+![检查并更新WSL内核](/wsl-6.png)
+::: tip
+后续可以用同样的指令接收WSL的有关更新。
+:::
+
+5. 安装USBIPD  
+::: info
+如果你的网络质量不佳以至于无法连接到GitHub，直接将下面这一步替换为双击 **USBIPD安装程序(文件名称为usbipd-win_x.x.x_x64.msi)** 进行安装
+:::
+```powershell
+winget install --interactive --exact dorssel.usbipd-win
+```
+至此，你已完成了WSL的基本组件的安装。
+
+### 安装Ubuntu-20.04发行版
+::: tip
+如果你因各种原因无法正常使用微软商店(Microsoft Store)，请尝试使用**Appx文件提取网站**提取该发行版的`.Appxbundle`文件，提取后在本地进行手动安装即可
+:::
+1. 打开你的微软商店(Microsoft Store) 
+![alt text](/wsl-7.png)
+
+---
+
+2. 搜索`Ubuntu 20.04.6 LTS`，进行安装
+![alt text](/wsl-8.png)
+
+---
