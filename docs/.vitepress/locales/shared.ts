@@ -58,7 +58,7 @@ export default defineConfig({
     extends: teekConfig,
     lang: 'zh-Hans',
     title: "Wup's Blog",
-    description: "目前啥也没写的一个个人兴趣Blog",
+    description: "博客建设中...",
     head: [['link', { rel: 'icon', href: '/logo.svg' }]],
     lastUpdated: true,
     themeConfig: {
