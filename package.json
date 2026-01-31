@@ -1,8 +1,8 @@
 {
   "type": "module",
   "devDependencies": {
-    "unocss": "^66.2.0",
-    "vitepress": "^1.6.3"
+    "vitepress": "^1.6.3",
+    "vitepress-theme-teek": "^1.5.4"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",

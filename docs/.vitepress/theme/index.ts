@@ -1,62 +1,12 @@
-import DefaultTheme from 'vitepress/theme'
-import {h,watch} from 'vue'
 import type { Theme } from 'vitepress'
 
-//customTheme
-import CSSLayout from './components/CSSLayout.vue'
-let homePageStyle: HTMLStyleElement | undefined
-import './style/index.css'
-import 'uno.css'
+//Teek Theme
+import Teek, { teekConfigContext } from "vitepress-theme-teek";
+import "vitepress-theme-teek/index.css";
+import TeekLayoutProvider from "./components/TeekLayoutProvider.vue";
 
 //config
 export default {
-  extends: DefaultTheme,
-  Layout: () => {
-    return h(CSSLayout)
-  },
-
-  enhanceApp({app , router }) {
-    // 彩虹背景动画样式
-    if (typeof window === 'undefined')
-      return
-
-    watch(
-        () => router.route.data.relativePath,
-        () => updateHomePageStyle(location.pathname === '/'),
-        { immediate: true },
-    )
-  },
+  extends: Teek,
+  Layout: TeekLayoutProvider,
 }satisfies Theme
-
-// 彩虹背景动画样式
-if (typeof window !== 'undefined') {
-  // detect browser, add to class for conditional styling
-  const browser = navigator.userAgent.toLowerCase()
-  if (browser.includes('chrome'))
-    document.documentElement.classList.add('browser-chrome')
-  else if (browser.includes('firefox'))
-    document.documentElement.classList.add('browser-firefox')
-  else if (browser.includes('safari'))
-    document.documentElement.classList.add('browser-safari')
-}
-// 彩虹背景动画样式
-function updateHomePageStyle(value: boolean) {
-  if (value) {
-    if (homePageStyle)
-      return
-
-    homePageStyle = document.createElement('style')
-    homePageStyle.innerHTML = `
-    :root {
-      animation: rainbow 12s linear infinite;
-    }`
-    document.body.appendChild(homePageStyle)
-  }
-  else {
-    if (!homePageStyle)
-      return
-
-    homePageStyle.remove()
-    homePageStyle = undefined
-  }
-}
