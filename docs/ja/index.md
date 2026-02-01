@@ -8,9 +8,6 @@ tk:
       - /decorations/card_after_training.png
   description:
     - 迷子でも進め!!!!!
-  category:
-    enabled: true
-    limit: 7
   article:
     showIcon: false
   page:
@@ -27,6 +24,8 @@ tk:
     title: '${icon}精選記事'
     emptyLabel: '精選記事はまだありません'
   category:
+    enabled: true
+    limit: 7
     pageTitle: '${icon}すべてのカテゴリ'
     homeTitle: '${icon}記事カテゴリ'
     moreLabel: 'その他 ...'

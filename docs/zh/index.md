@@ -8,9 +8,6 @@ tk:
       - /decorations/card_after_training.png
   description:
     - 在迷途中前行!!!!!
-  category:
-    enabled: true
-    limit: 7
   article:
     showIcon: false
   page:
@@ -28,6 +25,8 @@ tk:
     title: '${icon}精选文章'
     emptyLabel: '暂无精选文章'
   category:
+    enabled: true
+    limit: 7
     pageTitle: '${icon}全部分类'
     homeTitle: '${icon}文章分类'
     moreLabel: '更多 ...'
