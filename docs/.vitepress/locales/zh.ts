@@ -1,7 +1,7 @@
 // .vitepress/locales/zh.ts
 
 import { defineConfig } from "vitepress";
-import { defineTeekConfig } from "vitepress-theme-teek/config";
+import { defineTeekConfig, createRewrites } from "vitepress-theme-teek/config";
 
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
@@ -68,6 +68,14 @@ export default defineConfig({
         darkModeSwitchLabel: '主题',
         lightModeSwitchTitle: '切换到浅色模式',
         darkModeSwitchTitle: '切换到深色模式',
-        skipToContentLabel: '跳转到内容'
-    }
+        skipToContentLabel: '跳转到内容',
+        // 更改容器默认值标题
+        container: {
+            tipLabel: "提示",
+            warningLabel: "警告",
+            dangerLabel: "危险",
+            infoLabel: "信息",
+            detailsLabel: "详细信息",
+        },
+    },
 });

@@ -7,7 +7,7 @@ tk:
     imgSrc:
       - /decorations/card_after_training.png
   description:
-    - 在迷途中前行...
+    - 在迷途中前行!!!!!
   category:
     enabled: true
     limit: 7
