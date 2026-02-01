@@ -26,20 +26,20 @@ const teekConfig = defineTeekConfig({
         },
     },
     friendLink: {
-        title: '${icon}友情链接'
+        title: "友情链接"
     },
     docAnalysis: {
-        title: '${icon}站点信息'
+        title: "站点信息"
     },
     category: {
-        pageTitle: '${icon}全部分类',
-        homeTitle: '${icon}文章分类',
-        moreLabel: '更多 ...',
-        emptyLabel: '暂无文章分类'
+        pageTitle: "全部分类",
+        homeTitle: "文章分类",
+        moreLabel: "更多 ...",
+        emptyLabel: "暂无文章分类"
     },
     topArticle: {
-        title: '${icon}精选文章',
-        emptyLabel: '暂无精选文章'
+        title: "精选文章",
+        emptyLabel: "暂无精选文章"
     }
 });
 
@@ -48,43 +48,43 @@ export default defineConfig({
         ...teekConfig.themeConfig,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: '主页', link: '/' },
+            { text: "主页", link: "/" },
             {
-                text: 'BVE Train Sim',
+                text: "BVE Train Sim",
                 items: [
-                    { text: '补丁', link: '/bve/patches' },
-                    { text: '插件', link: '/bve/plugins' }
+                    { text: "补丁", link: "/bve/patches" },
+                    { text: "插件", link: "/bve/plugins" }
                 ]
             },
-            { text: '教程', link: '/tutorials' },
+            { text: "教程", link: "/tutorials" },
         ],
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/winup-zhou' },
-            { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
-            { icon: 'x', link: 'https://x.com/wup99925510' }
+            { icon: "github", link: "https://github.com/winup-zhou" },
+            { icon: "bilibili", link: "https://space.bilibili.com/248556377" },
+            { icon: "x", link: "https://x.com/wup99925510" }
         ],
         docFooter: {
-            prev: '上一页',
-            next: '下一页'
+            prev: "上一页",
+            next: "下一页"
         },
         outline: {
-            label: '页面导航'
+            label: "页面导航"
         },
         notFound: {
-            title: '页面迷路了',
-            quote: '不畏迷茫，迷茫着也要砥砺前行。',
-            linkLabel: '前往首页',
-            linkText: '带我回首页'
+            title: "页面迷路了",
+            quote: "不畏迷茫，迷茫着也要砥砺前行。",
+            linkLabel: "前往首页",
+            linkText: "带我回首页"
         },
         lastUpdated: {
-            text: '最后更新于'
+            text: "最后更新于"
         },
-        returnToTopLabel: '回到顶部',
-        sidebarMenuLabel: '菜单',
-        darkModeSwitchLabel: '主题',
-        lightModeSwitchTitle: '切换到浅色模式',
-        darkModeSwitchTitle: '切换到深色模式',
-        skipToContentLabel: '跳转到内容',
+        returnToTopLabel: "回到顶部",
+        sidebarMenuLabel: "菜单",
+        darkModeSwitchLabel: "主题",
+        lightModeSwitchTitle: "切换到浅色模式",
+        darkModeSwitchTitle: "切换到深色模式",
+        skipToContentLabel: "跳转到内容",
         // 更改容器默认值标题
         container: {
             tipLabel: "提示",

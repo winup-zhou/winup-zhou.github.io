@@ -5,7 +5,7 @@ import { defineTeekConfig } from "vitepress-theme-teek/config";
 
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
-    loading: '迷子でもいい、迷子でも進め。',
+    loading: "迷子でもいい、迷子でも進め。",
     themeEnhance: {
         themeColor: {
             customize: true, // 是否启用自定义主题组
@@ -26,20 +26,20 @@ const teekConfig = defineTeekConfig({
         },
     },
     friendLink: {
-        title: '${icon}リンク集'
+        title: "リンク集"
     },
     docAnalysis: {
-        title: '${icon}サイト情報'
+        title: "サイト情報"
     },
     category: {
-        pageTitle: '${icon}すべてのカテゴリ',
-        homeTitle: '${icon}記事カテゴリ',
-        moreLabel: 'その他 ...',
-        emptyLabel: '記事のカテゴリはありません'
+        pageTitle: "すべてのカテゴリ",
+        homeTitle: "記事カテゴリ",
+        moreLabel: "その他 ...",
+        emptyLabel: "記事のカテゴリはありません"
     },
     topArticle: {
-        title: '${icon}精選記事',
-        emptyLabel: '精選記事はまだありません'
+        title: "精選記事",
+        emptyLabel: "精選記事はまだありません"
     }
 });
 
@@ -48,41 +48,41 @@ export default defineConfig({
         ...teekConfig.themeConfig,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
-            { text: 'ホーム', link: '/ja/' },
+            { text: "ホーム", link: "/ja/" },
             {
-                text: 'BVE TrainSim',
+                text: "BVE TrainSim",
                 items: [
-                    { text: 'パッチ', link: '/bve/patches' },
-                    { text: 'プラグイン', link: '/bve/plugins' }
+                    { text: "パッチ", link: "/bve/patches" },
+                    { text: "プラグイン", link: "/bve/plugins" }
                 ]
             },
         ],
         socialLinks: [
-            { icon: 'github', link: 'https://github.com/winup-zhou' },
-            { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
-            { icon: 'x', link: 'https://x.com/wup99925510' }
+            { icon: "github", link: "https://github.com/winup-zhou" },
+            { icon: "bilibili", link: "https://space.bilibili.com/248556377" },
+            { icon: "x", link: "https://x.com/wup99925510" }
         ],
         docFooter: {
-            prev: '前ページへ',
-            next: '次ページへ'
+            prev: "前ページへ",
+            next: "次ページへ"
         },
         outline: {
-            label: 'ページ内ナビゲーション'
+            label: "ページ内ナビゲーション"
         },
         notFound: {
-            title: 'ページが迷子になりました',
-            quote: '迷子でもいい、迷子でも進め。',
-            linkLabel: 'ホームページへ',
-            linkText: 'トップページに戻る'
+            title: "ページが迷子になりました",
+            quote: "迷子でもいい、迷子でも進め。",
+            linkLabel: "ホームページへ",
+            linkText: "トップページに戻る"
         },
         lastUpdated: {
-            text: '最終更新日'
+            text: "最終更新日"
         },
-        returnToTopLabel: 'トップに戻る',
-        sidebarMenuLabel: 'メニュー',
-        darkModeSwitchLabel: 'テーマ',
-        lightModeSwitchTitle: 'ライトモードに切り替える',
-        darkModeSwitchTitle: 'ダークモードに切り替える',
-        skipToContentLabel: 'コンテンツへジャンプ'
+        returnToTopLabel: "トップに戻る",
+        sidebarMenuLabel: "メニュー",
+        darkModeSwitchLabel: "テーマ",
+        lightModeSwitchTitle: "ライトモードに切り替える",
+        darkModeSwitchTitle: "ダークモードに切り替える",
+        skipToContentLabel: "コンテンツへジャンプ"
     }    
 });
