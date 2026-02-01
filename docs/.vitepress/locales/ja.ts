@@ -12,14 +12,14 @@ const teekConfig = defineTeekConfig({
             append: [
                 {
                     label: "It's MyGO!!!!!", // 主题组名称
-                    tip: "MyGO主题色切换", // 主题组提示信息，鼠标悬停时显示
+                    tip: "MyGOのテーマカラー切り替え", // 主题组提示信息，鼠标悬停时显示
                     options: [
-                        { label: "团标", value: "band", color: "#3388bb" },
-                        { label: "爱音", value: "anon", color: "#ff8899" },
-                        { label: "爽世", value: "soyo", color: "#ffdd88" },
-                        { label: "灯", value: "tomori", color: "#77bbdd" },
+                        { label: "バンドアイコン", value: "band", color: "#3388bb" },
+                        { label: "愛音", value: "anon", color: "#ff8899" },
+                        { label: "そよ", value: "soyo", color: "#ffdd88" },
+                        { label: "燈", value: "tomori", color: "#77bbdd" },
                         { label: "立希", value: "taki", color: "#7777aa" },
-                        { label: "乐奈", value: "rana", color: "#77dd77" },
+                        { label: "楽奈", value: "rana", color: "#77dd77" },
                     ],
                 },
             ],
@@ -30,27 +30,25 @@ const teekConfig = defineTeekConfig({
 export default defineConfig({
     themeConfig: {
         ...teekConfig.themeConfig,
-        i18nRouting: true,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: 'ホーム', link: '/ja/' },
             {
-                text: 'BVE Train Sim',
+                text: 'BVE TrainSim',
                 items: [
-                { text: 'パッチ', link: '/ja/bve/patchs' },
-                { text: 'プラグイン', link: '/ja/bve/plugins' }
+                    { text: 'パッチ', link: '/bve/patches' },
+                    { text: 'プラグイン', link: '/bve/plugins' }
                 ]
             },
-            { text: 'Minecraft', link: '/ja/mc' }
-            ],
-            socialLinks: [
+        ],
+        socialLinks: [
             { icon: 'github', link: 'https://github.com/winup-zhou' },
             { icon: 'bilibili', link: 'https://space.bilibili.com/248556377' },
             { icon: 'x', link: 'https://x.com/wup99925510' }
         ],
         docFooter: {
-            prev: false,
-            next: false
+            prev: '前ページへ',
+            next: '次ページへ'
         },
         outline: {
             label: 'ページ内ナビゲーション'

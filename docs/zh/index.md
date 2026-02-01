@@ -28,7 +28,7 @@ tk:
     list:
       - name: 樱之境
         desc: Sakura Reverie
-        avatar: https://www.sakurin.cn/res/img/logo.svg
+        avatar: https://www.sakurin.cn/svg/logo.svg
         link: https://www.sakurin.cn
     autoScroll: true
 ---

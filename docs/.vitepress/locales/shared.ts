@@ -2,10 +2,12 @@ import { defineConfig } from "vitepress";
 import { searchOptionsI18n } from '../search-options-i18n';
 import { defineTeekConfig } from "vitepress-theme-teek/config";
 
+
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
     teekTheme: true,
     teekHome: true,
+    sidebarTrigger: true,
     viewTransition: {
         enabled: true, // 是否启用深浅色切换动画效果
         mode: "out-in", // 动画模式，out 始终从点击点往全屏扩散，out-in 第一次从点击点往全屏扩散，再次点击从全屏回到点击点
@@ -15,16 +17,9 @@ const teekConfig = defineTeekConfig({
     windowTransition: true,
     post: {
         postStyle: "list", // 文章列表风格
-        excerptPosition: "top", // 文章摘要位置
-        showMore: true, // 是否显示更多按钮
-        coverImgMode: "default", // 文章封面图模式
         showCapture: false, // 是否在摘要位置显示文章部分文字，当为 true 且不使用 frontmatter.describe 和 <!-- more --> 时，会自动截取前 300 个字符作为摘要
         splitSeparator: false, // 文章信息（作者、创建时间、分类、标签等信息）是否添加 | 分隔符
         transition: true, // 是否开启过渡动画
-        transitionName: "tk-slide-fade", // 自定义过渡动画名称
-        listStyleTitleTagPosition: "right", // 列表模式下的标题标签位置（postStyle 为 list）
-        cardStyleTitleTagPosition: "left", // 卡片模式下的标题标签位置（postStyle 为 card）
-        defaultCoverImg: [], // 默认封面图地址，如果不设置封面图则使用默认封面图地址
     },
     author: {
         name: "Win_Update",
@@ -52,6 +47,17 @@ const teekConfig = defineTeekConfig({
     riskLink: {
         enabled: true,
     },
+    docAnalysis: {
+        enabled: true, // 是否启用站点信息卡片
+        createTime: "2025-06-09", // 站点创建时间
+        wordCount: true, // 是否开启文章页的字数统计
+        readingTime: true, // 是否开启文章页的阅读时长统计
+    },
+    vitePlugins: {
+        sidebarOption: {
+            localeRootDir: "zh",
+        },
+    },
 });
 
 export default defineConfig({
@@ -65,7 +71,7 @@ export default defineConfig({
         logo: '/logo.svg',
         i18nRouting: true,
         search: {
-        provider: 'local',
+            provider: 'local',
             options: {
                 locales: {
                     root: searchOptionsI18n.root,
@@ -76,7 +82,7 @@ export default defineConfig({
     },
     //路径重写（zh写到根）
     rewrites: {
-        'zh/:path*': ':path*'
+        "zh/:rest*": ":rest*",
     },
     cleanUrls: true,
 });

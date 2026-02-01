@@ -25,16 +25,11 @@ const teekConfig = defineTeekConfig({
             ],
         },
     },
-    post: {
-        moreLabel: "阅读全文 >", // 更多按钮文字
-        emptyLabel: "暂无文章", // 文章列表为空时的标签
-    },
 });
 
 export default defineConfig({
     themeConfig: {
         ...teekConfig.themeConfig,
-        i18nRouting: true,
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: '主页', link: '/' },
@@ -45,7 +40,7 @@ export default defineConfig({
                     { text: '插件', link: '/bve/plugins' }
                 ]
             },
-            { text: '小教程', link: '/tutorials' },
+            { text: '教程', link: '/tutorials' },
         ],
         socialLinks: [
             { icon: 'github', link: 'https://github.com/winup-zhou' },
@@ -53,8 +48,8 @@ export default defineConfig({
             { icon: 'x', link: 'https://x.com/wup99925510' }
         ],
         docFooter: {
-            prev: false,
-            next: false
+            prev: '上一页',
+            next: '下一页'
         },
         outline: {
             label: '页面导航'

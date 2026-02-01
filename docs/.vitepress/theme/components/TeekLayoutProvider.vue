@@ -2,14 +2,14 @@
 import Teek, { zhCn, en } from "vitepress-theme-teek";
 import { useData } from "vitepress";
 import { computed } from "vue";
-import jaJp from "../locale/ja-JP";
+import ja from "../locale/ja";
 
 const { lang } = useData();
 
 const locale = computed(() => {
   if (lang.value === "zh-CN") return zhCn;
-  else if (lang.value === "ja-JP") return jaJp;
-  return en;
+  else if (lang.value === "ja-JP") return ja;
+  else return en;
 });
 </script>
 
