@@ -25,6 +25,22 @@ const teekConfig = defineTeekConfig({
             ],
         },
     },
+    friendLink: {
+        title: '${icon}友情链接'
+    },
+    docAnalysis: {
+        title: '${icon}站点信息'
+    },
+    category: {
+        pageTitle: '${icon}全部分类',
+        homeTitle: '${icon}文章分类',
+        moreLabel: '更多 ...',
+        emptyLabel: '暂无文章分类'
+    },
+    topArticle: {
+        title: '${icon}精选文章',
+        emptyLabel: '暂无精选文章'
+    }
 });
 
 export default defineConfig({

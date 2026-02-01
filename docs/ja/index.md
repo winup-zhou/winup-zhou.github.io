@@ -20,25 +20,15 @@ tk:
     circleSize: 100 # 头像大小
   tag:
     enabled: false
-  topArticle:
-    title: '${icon}精選記事'
-    emptyLabel: '精選記事はまだありません'
   category:
     enabled: true
     limit: 7
-    pageTitle: '${icon}すべてのカテゴリ'
-    homeTitle: '${icon}記事カテゴリ'
-    moreLabel: 'その他 ...'
-    emptyLabel: '記事のカテゴリはありません'
   friendLink:
-    title: '${icon}リンク集'
     list:
       - name: 樱之境
         desc: Sakura Reverie
         avatar: https://www.sakurin.cn/svg/logo.svg
         link: https://www.sakurin.cn
     autoScroll: true
-  docAnalysis:
-    title: '${icon}サイト情報'
 ---
 

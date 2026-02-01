@@ -25,6 +25,22 @@ const teekConfig = defineTeekConfig({
             ],
         },
     },
+    friendLink: {
+        title: '${icon}リンク集'
+    },
+    docAnalysis: {
+        title: '${icon}サイト情報'
+    },
+    category: {
+        pageTitle: '${icon}すべてのカテゴリ',
+        homeTitle: '${icon}記事カテゴリ',
+        moreLabel: 'その他 ...',
+        emptyLabel: '記事のカテゴリはありません'
+    },
+    topArticle: {
+        title: '${icon}精選記事',
+        emptyLabel: '精選記事はまだありません'
+    }
 });
 
 export default defineConfig({
