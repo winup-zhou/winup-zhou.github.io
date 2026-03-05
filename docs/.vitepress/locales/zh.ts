@@ -8,6 +8,7 @@ const teekConfig = defineTeekConfig({
     loading: "不畏迷茫，迷茫着也要砥砺前行。",
     themeEnhance: {
         themeColor: {
+            disableHelp: true,
             customize: true, // 是否启用自定义主题组
             append: [
                 {
@@ -85,7 +86,10 @@ export default defineConfig({
         lightModeSwitchTitle: "切换到浅色模式",
         darkModeSwitchTitle: "切换到深色模式",
         skipToContentLabel: "跳转到内容",
-        // 更改容器默认值标题
+
+    },        
+    // 更改容器默认值标题
+    markdown: {
         container: {
             tipLabel: "提示",
             warningLabel: "警告",

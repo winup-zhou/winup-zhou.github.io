@@ -55,6 +55,7 @@ export default {
     },
     articleUpdate: {
       label: "最近の更新",
+      moreLabel: "その他の記事 >",
     },
     catalogue: {
       label: "目次ページ",
@@ -120,8 +121,8 @@ export default {
     docAnalysisCard: {
       title: "{icon}サイト情報",
       totalPosts: "記事総数",
-      weekAddNum: "直近1週間の新規投稿",
-      monthAddNum: "直近1ヶ月の新規投稿",
+      weekAddNum: "直近 1 週間の新規投稿",
+      monthAddNum: "直近 1 ヶ月の新規投稿",
       runtime: "稼働期間",
       totalWordCount: "サイト全体の文字数",
       lastActiveTime: "最終活動日時",

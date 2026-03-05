@@ -8,6 +8,7 @@ const teekConfig = defineTeekConfig({
     loading: "迷子でもいい、迷子でも進め。",
     themeEnhance: {
         themeColor: {
+            disableHelp: true,
             customize: true, // 是否启用自定义主题组
             append: [
                 {
@@ -84,5 +85,15 @@ export default defineConfig({
         lightModeSwitchTitle: "ライトモードに切り替える",
         darkModeSwitchTitle: "ダークモードに切り替える",
         skipToContentLabel: "コンテンツへジャンプ"
-    }    
+    },
+    // コンテナのデフォルトタイトルを変更
+    markdown: {
+        container: {
+            tipLabel: "ヒント",
+            warningLabel: "警告",
+            dangerLabel: "危険",
+            infoLabel: "情報",
+            detailsLabel: "詳細情報",
+        },
+    },    
 });
