@@ -7,8 +7,8 @@ import ja from "../locale/ja";
 const { lang } = useData();
 
 const locale = computed(() => {
-  if (lang.value === "zh-CN") return zhCn;
-  else if (lang.value === "ja-JP") return ja;
+  if (lang.value === "zh") return zhCn;
+  else if (lang.value === "ja") return ja;
   else return en;
 });
 </script>

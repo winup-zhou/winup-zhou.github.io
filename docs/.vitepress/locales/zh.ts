@@ -30,7 +30,11 @@ const teekConfig = defineTeekConfig({
         title: "友情链接"
     },
     docAnalysis: {
-        title: "站点信息"
+        title: "站点信息",
+        enabled: true, // 是否启用站点信息卡片
+        createTime: "2025-06-09", // 站点创建时间
+        wordCount: true, // 是否开启文章页的字数统计
+        readingTime: true, // 是否开启文章页的阅读时长统计
     },
     category: {
         pageTitle: "全部分类",
@@ -45,6 +49,22 @@ const teekConfig = defineTeekConfig({
 });
 
 export default defineConfig({
+    // 更改容器默认值标题
+    markdown: {
+        // 开启行号
+        lineNumbers: true,
+        image: {
+            // 默认禁用；设置为 true 可为所有图片启用懒加载。
+            lazyLoading: true,
+        },
+        container: {
+            tipLabel: "提示",
+            warningLabel: "警告",
+            dangerLabel: "危险",
+            infoLabel: "信息",
+            detailsLabel: "详细信息",
+        },
+    },
     themeConfig: {
         ...teekConfig.themeConfig,
         // https://vitepress.dev/reference/default-theme-config
@@ -88,14 +108,4 @@ export default defineConfig({
         skipToContentLabel: "跳转到内容",
 
     },        
-    // 更改容器默认值标题
-    markdown: {
-        container: {
-            tipLabel: "提示",
-            warningLabel: "警告",
-            dangerLabel: "危险",
-            infoLabel: "信息",
-            detailsLabel: "详细信息",
-        },
-    },
 });

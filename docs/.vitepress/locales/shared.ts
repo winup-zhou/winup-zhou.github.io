@@ -67,6 +67,14 @@ export default defineConfig({
     description: "博客建设中...",
     head: [['link', { rel: 'icon', href: '/logo.svg' }]],
     lastUpdated: true,
+    markdown: {
+        // 开启行号
+        lineNumbers: true,
+        image: {
+            // 默认禁用；设置为 true 可为所有图片启用懒加载。
+            lazyLoading: true,
+        },
+    },
     themeConfig: {
         logo: '/logo.svg',
         i18nRouting: true,
@@ -85,12 +93,4 @@ export default defineConfig({
         "zh/:rest*": ":rest*",
     },
     cleanUrls: true,
-    markdown: {
-        // 开启行号
-        lineNumbers: true,
-        image: {
-            // 默认禁用；设置为 true 可为所有图片启用懒加载。
-            lazyLoading: true,
-        },
-    },
 });
