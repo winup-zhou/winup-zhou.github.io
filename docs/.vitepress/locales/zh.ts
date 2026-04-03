@@ -77,6 +77,7 @@ export default defineConfig({
                     { text: "插件", link: "/bve/plugins" }
                 ]
             },
+            { text: "信号系统研究", link: "/signals" },
             { text: "教程", link: "/tutorials" },
         ],
         socialLinks: [
