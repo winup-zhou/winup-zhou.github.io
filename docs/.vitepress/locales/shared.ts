@@ -62,9 +62,7 @@ const teekConfig = defineTeekConfig({
 
 export default defineConfig({
     extends: teekConfig,
-    lang: 'zh-Hans',
     title: "Wup's Blog",
-    description: "博客建设中...",
     head: [['link', { rel: 'icon', href: '/logo.svg' }]],
     lastUpdated: true,
     markdown: {

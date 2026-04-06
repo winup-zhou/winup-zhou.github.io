@@ -31,10 +31,6 @@ const teekConfig = defineTeekConfig({
     },
     docAnalysis: {
         title: "サイト情報",
-        enabled: true, // 是否启用站点信息卡片
-        createTime: "2025-06-09", // 站点创建时间
-        wordCount: true, // 是否开启文章页的字数统计
-        readingTime: true, // 是否开启文章页的阅读时长统计
     },
     category: {
         pageTitle: "すべてのカテゴリ",
@@ -48,9 +44,26 @@ const teekConfig = defineTeekConfig({
     }
 });
 
-export default defineConfig({  
+export default defineConfig({
+    // コンテナのデフォルトタイトルを変更
+    markdown: {
+        // 开启行号
+        lineNumbers: true,
+        image: {
+            // 默认禁用；设置为 true 可为所有图片启用懒加载。
+            lazyLoading: true,
+        },
+        container: {
+            tipLabel: "ヒント",
+            warningLabel: "警告",
+            dangerLabel: "危険",
+            infoLabel: "情報",
+            detailsLabel: "詳細情報",
+        },
+    },  
     themeConfig: {
         ...teekConfig.themeConfig,
+        description: "ブログ建設中...",
         // https://vitepress.dev/reference/default-theme-config
         nav: [
             { text: "ホーム", link: "/ja/" },
@@ -90,20 +103,4 @@ export default defineConfig({
         darkModeSwitchTitle: "ダークモードに切り替える",
         skipToContentLabel: "コンテンツへジャンプ"
     },  
-    // コンテナのデフォルトタイトルを変更
-    markdown: {
-        // 开启行号
-        lineNumbers: true,
-        image: {
-            // 默认禁用；设置为 true 可为所有图片启用懒加载。
-            lazyLoading: true,
-        },
-        container: {
-            tipLabel: "ヒント",
-            warningLabel: "警告",
-            dangerLabel: "危険",
-            infoLabel: "情報",
-            detailsLabel: "詳細情報",
-        },
-    },
 });
