@@ -11,12 +11,12 @@ export default defineConfig({
   locales: {
     root: {
       label: '简体中文',
-      lang: 'zh',
+      lang: 'zh-CN',
       ...zh
     },
     ja: {
       label: '日本語',
-      lang: 'ja',
+      lang: 'ja-JP',
       ...ja
     }
   },

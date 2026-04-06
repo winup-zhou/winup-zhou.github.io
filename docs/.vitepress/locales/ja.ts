@@ -48,23 +48,7 @@ const teekConfig = defineTeekConfig({
     }
 });
 
-export default defineConfig({
-    // コンテナのデフォルトタイトルを変更
-    markdown: {
-        // 开启行号
-        lineNumbers: true,
-        image: {
-            // 默认禁用；设置为 true 可为所有图片启用懒加载。
-            lazyLoading: true,
-        },
-        container: {
-            tipLabel: "ヒント",
-            warningLabel: "警告",
-            dangerLabel: "危険",
-            infoLabel: "情報",
-            detailsLabel: "詳細情報",
-        },
-    },  
+export default defineConfig({  
     themeConfig: {
         ...teekConfig.themeConfig,
         // https://vitepress.dev/reference/default-theme-config
@@ -106,4 +90,20 @@ export default defineConfig({
         darkModeSwitchTitle: "ダークモードに切り替える",
         skipToContentLabel: "コンテンツへジャンプ"
     },  
+    // コンテナのデフォルトタイトルを変更
+    markdown: {
+        // 开启行号
+        lineNumbers: true,
+        image: {
+            // 默认禁用；设置为 true 可为所有图片启用懒加载。
+            lazyLoading: true,
+        },
+        container: {
+            tipLabel: "ヒント",
+            warningLabel: "警告",
+            dangerLabel: "危険",
+            infoLabel: "情報",
+            detailsLabel: "詳細情報",
+        },
+    },
 });

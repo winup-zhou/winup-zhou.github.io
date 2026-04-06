@@ -49,22 +49,6 @@ const teekConfig = defineTeekConfig({
 });
 
 export default defineConfig({
-    // 更改容器默认值标题
-    markdown: {
-        // 开启行号
-        lineNumbers: true,
-        image: {
-            // 默认禁用；设置为 true 可为所有图片启用懒加载。
-            lazyLoading: true,
-        },
-        container: {
-            tipLabel: "提示",
-            warningLabel: "警告",
-            dangerLabel: "危险",
-            infoLabel: "信息",
-            detailsLabel: "详细信息",
-        },
-    },
     themeConfig: {
         ...teekConfig.themeConfig,
         // https://vitepress.dev/reference/default-theme-config
@@ -108,5 +92,21 @@ export default defineConfig({
         darkModeSwitchTitle: "切换到深色模式",
         skipToContentLabel: "跳转到内容",
 
+    },
+    // 更改容器默认值标题
+    markdown: {
+        // 开启行号
+        lineNumbers: true,
+        image: {
+            // 默认禁用；设置为 true 可为所有图片启用懒加载。
+            lazyLoading: true,
+        },
+        container: {
+            tipLabel: "提示",
+            warningLabel: "警告",
+            dangerLabel: "危险",
+            infoLabel: "信息",
+            detailsLabel: "详细信息",
+        },
     },        
 });
