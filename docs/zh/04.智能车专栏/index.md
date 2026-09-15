@@ -12,7 +12,7 @@ article: false
 ---
 
 ::: center
-![示意图](/origincar/common/01-image1.webp)
+<img src="/origincar/common/01-image1.webp" alt="示意图" width="688" />
 
 **OriginCar Pro**
 

@@ -78,7 +78,18 @@ export default defineConfig({
                     { text: "插件", link: "/bve/plugins" }
                 ]
             },
-            { text: "信号系统研究", link: "/signals" },
+            {
+                text: "信号系统研究",
+                items: [
+                    { text: "研究总览", link: "/signals" },
+                    { text: "GRS · 系统概述", link: "/signals/micro-cabmatic" },
+                    { text: "GRS · 轨旁设备", link: "/signals/wayside-atc" },
+                    { text: "GRS · 车载设备", link: "/signals/onboard-atc" },
+                    { text: "US&S · 系统概述", link: "/signals/microcab" },
+                    { text: "US&S · 轨旁设备", link: "/signals/microcab-wayside" },
+                    { text: "US&S · 车载设备", link: "/signals/microcab-onboard" }
+                ]
+            },
             {
                 text: "智能车专栏",
                 items: [
