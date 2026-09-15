@@ -31,7 +31,7 @@ const teekConfig = defineTeekConfig({
     },
     docAnalysis: {
         title: "站点信息",
-        enabled: true, // 是否启用站点信息卡片
+        enabled: false, // 是否启用站点信息卡片（关闭首页展示，文章页的字数/阅读时长不受影响）
         createTime: "2025-06-09", // 站点创建时间
         wordCount: true, // 是否开启文章页的字数统计
         readingTime: true, // 是否开启文章页的阅读时长统计
@@ -78,8 +78,18 @@ export default defineConfig({
                     { text: "插件", link: "/bve/plugins" }
                 ]
             },
-            { text: "信号系统研究", link: "/signals" },
-            { text: "教程", link: "/tutorials" },
+            // 信号系统章节改版中，暂时从导航隐藏
+            // { text: "信号系统研究", link: "/signals" },
+            {
+                text: "智能车专栏",
+                items: [
+                    { text: "专栏首页", link: "/origincar" },
+                    { text: "基础环境搭建", link: "/origincar/env/wsl" },
+                    { text: "快速上手", link: "/origincar/quickstart/overview" },
+                    { text: "各功能模块的实现", link: "/origincar/modules/host-comm" },
+                    { text: "进阶运用指南", link: "/origincar/advanced/one-click" }
+                ]
+            },
         ],
         socialLinks: [
             { icon: "github", link: "https://github.com/winup-zhou" },
