@@ -78,8 +78,7 @@ export default defineConfig({
                     { text: "插件", link: "/bve/plugins" }
                 ]
             },
-            // 信号系统章节改版中，暂时从导航隐藏
-            // { text: "信号系统研究", link: "/signals" },
+            { text: "信号系统研究", link: "/signals" },
             {
                 text: "智能车专栏",
                 items: [
